@@ -1,0 +1,54 @@
+1: Given an integer M perform the following conditional actions:
+
+
+
+- If M is multiple of 3 and 5 then print "Good Number" (without quotes).
+
+- If M is only multiple of 3 and not of 5 then print "Bad Number" (without quotes).
+
+- If M is only multiple of 5 and not of 3 then print "Poor Number" (without quotes).
+
+- If M doesn't satisfy any of the above conditions then print "-1" (without quotes).
+
+
+
+#include <iostream>
+
+using namespace std;
+int main(){
+ int m;
+cout << "Enter a Number "<< endl;    
+cin >> m;
+if(m%3==0 && m%5==0){
+cout<< "good number"<<endl;
+} 
+else if(m%3==0 && m%5!=0){
+cout<< "bad number"<<endl;
+}
+else if(m%3!=0 && m%5 ==0 ){
+cout<<"poor number"<<endl;
+}
+else{
+cout<< "-1";
+}
+
+2.2. Wap to. Reverse digit of a number
+ 
+#include <iostream>  
+using namespace std;  
+int main()  
+{  
+int n, reverse=0, rem;    
+cout<<"Enter a number: ";    
+cin>>n;    
+  while(n!=0)    
+  {    
+     rem=n%10;      
+     reverse=reverse*10+rem;    
+     n/=10;    
+  }    
+ cout<<"Reversed Number: "<<reverse<<endl;     
+return 0;  
+}  
+
+
